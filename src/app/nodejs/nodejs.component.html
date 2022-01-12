@@ -1,0 +1,11 @@
+<div class="container">
+    <div align=center *ngFor="let nodejs of nodejsDetailes">
+        <h1>{{ nodejs.title | uppercase}}</h1>
+        <div>
+            <img [src]="nodejs.image">
+        </div>
+        <div>
+            {{nodejs.description}}
+        </div>
+    </div>
+</div>

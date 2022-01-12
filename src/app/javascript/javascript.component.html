@@ -1,0 +1,11 @@
+<div class="container">
+    <div align=center *ngFor="let javascript of javascriptDetailes">
+        <h1>{{ javascript.title | uppercase}}</h1>
+        <div>
+            <img width="228" [src]="javascript.image">
+        </div>
+        <div>
+            {{javascript.description}}
+        </div>
+    </div>
+</div>

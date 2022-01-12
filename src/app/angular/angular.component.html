@@ -1,0 +1,12 @@
+<div class="container">
+    <div align=center *ngFor="let angular of angularDetailes">
+        <h1>{{ angular.title | uppercase}}</h1>
+        <div>
+            <img [src]="angular.image">
+            <!-- <img src="..//../assets/Angularlogo.png"> -->
+        </div>
+        <div>
+            {{angular.description}}
+        </div>
+    </div>
+</div>
